@@ -1,8 +1,11 @@
+--Create table departments
+
 CREATE TABLE Departments (Department_Id Number(5) generated always as identity,
     Department_Name Varchar2(50) Not null,
     Location Varchar2(50) not null,
     constraint department_pk primary key (Department_Id));
 
+--Create table Employees
 
 CREATE TABLE Employees (Employee_Id Number(10) generated always as identity,
     Employee_Name Varchar2(50) Not null,
@@ -15,12 +18,13 @@ CREATE TABLE Employees (Employee_Id Number(10) generated always as identity,
     Constraint fk_dept_id FOREIGN KEY (Department_Id) 
     references Departments(Department_Id) );
 
-
+--Insert into Departments
 INSERT INTO Departments(Department_Name,Location) VALUES ('Management','London');
 INSERT INTO Departments(Department_Name,Location) VALUES ('Engineering','Cardiff');
 INSERT INTO Departments(Department_Name,Location) VALUES ('Research & Development ','Edinburgh');
 INSERT INTO Departments(Department_Name,Location) VALUES ('Sales ','Belfast');
 
+--Insert into Employees
 INSERT INTO Employees(Employee_Name,Job_Title,Date_Hired,Salary,Department_Id) VALUES ('John Smith','CEO',TO_DATE('01/01/95','dd/mm/yy'),100000,1);
 INSERT INTO Employees(Employee_Name,Job_Title,Manager_Id,Date_Hired,Salary,Department_Id) VALUES ('Jimmy Willis','Manager',90001,TO_DATE('23/09/03','dd/mm/rr'),52500,4);
 INSERT INTO Employees(Employee_Name,Job_Title,Manager_Id,Date_Hired,Salary,Department_Id) VALUES ('Roxy Jones','Salesperson',90002,TO_DATE('11/02/17','dd/mm/yy'),35000,4);

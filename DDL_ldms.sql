@@ -21,7 +21,7 @@ CREATE TABLE Employees (Employee_Id Number(10) generated always as identity,
 --Insert into Departments
 INSERT INTO Departments(Department_Name,Location) VALUES ('Management','London');
 INSERT INTO Departments(Department_Name,Location) VALUES ('Engineering','Cardiff');
-INSERT INTO Departments(Department_Name,Location) VALUES ('Research & Development ','Edinburgh');
+INSERT INTO Departments(Department_Name,Location) VALUES ('Research & Development','Edinburgh');
 INSERT INTO Departments(Department_Name,Location) VALUES ('Sales ','Belfast');
 
 --Insert into Employees

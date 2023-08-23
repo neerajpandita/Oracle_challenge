@@ -1,4 +1,4 @@
-Spool on
+--Spool on
 set define on
 set termout on
 set linesize 100
@@ -7,7 +7,7 @@ column department_id heading "Department Id"
 
 TTITLE  LEFT '===============Displaying Total employee salary in Department entered=================' SKIP 2
 
-Spool C:\Users\Neeraj\LDMS\Report_tot_sal.txt
+--Spool C:\Users\Neeraj\LDMS\Report_tot_sal.txt
 
     -- Display employee information
    SELECT SUM(salary),
@@ -20,6 +20,6 @@ Spool C:\Users\Neeraj\LDMS\Report_tot_sal.txt
 
 CLEAR COLUMNS
 set define off
-spool off
+--spool off
 
 

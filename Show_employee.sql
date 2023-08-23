@@ -1,4 +1,4 @@
-Spool on
+--Spool on
 set define on
 set termout on
 set linesize 200
@@ -14,7 +14,7 @@ ALTER SESSION SET NLS_DATE_FORMAT = 'DD-MM-YY';
 
 TTITLE  LEFT '===============Displaying Employee details in Department entered=================' SKIP 2
 
-Spool C:\Users\Neeraj\LDMS\Report_Emp.txt
+--Spool C:\Users\Neeraj\LDMS\Report_Emp.txt
 
     -- Display employee information
     SELECT employee_id, 
@@ -28,6 +28,6 @@ Spool C:\Users\Neeraj\LDMS\Report_Emp.txt
 
 CLEAR COLUMNS
 set define off
-spool off
+--spool off
 
 

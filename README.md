@@ -32,6 +32,4 @@ You can verify the creation of tables and data load in tables once this step com
  e.g @C:\Users\Neeraj\oracle_challenge\Oracle_challenge\Run.sql 
 
 
- Steps to Git clone into your local for Windows - 
- Git clone 
  
